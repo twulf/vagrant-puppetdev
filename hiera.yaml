@@ -1,7 +1,6 @@
 ---
 :backends:
   - yaml
-#  - eyaml
 :hierarchy:
   - global
   - "nodes/%{::clientcert}"
@@ -13,8 +12,3 @@
 :yaml:
   :datadir: /tmp/hieradata
   :merge_behavior: deeper
-#:eyaml:
-#  :datadir: /etc/puppet/hieradata/%{::environment}
-#  :pkcs7_private_key: /etc/puppet/keys/private_key.pkcs7.pem
-#  :pkcs7_public_key: /etc/puppet/keys/public_key.pkcs7.pem
-#  :extension: 'eyaml'
