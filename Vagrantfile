@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "provision.sh"
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo yum -y install puppet-3.7.4
+    sudo yum -y install puppet-3.8.6
   SHELL
 
   config.vm.synced_folder "~/Documents/workspace/hieradata", "/tmp/hieradata"
